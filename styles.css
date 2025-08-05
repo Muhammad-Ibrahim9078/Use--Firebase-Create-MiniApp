@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: Arial, sans-serif;
     background: #f4f4f9;
     margin: 0;
@@ -8,6 +8,10 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+
+
+
 
 .auth-container {
     background: white;
@@ -102,4 +106,22 @@ nav button {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* dashboard nav bar */
+#navbar > nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+{
+    display: flex;
+    justify-content: center;
 }
