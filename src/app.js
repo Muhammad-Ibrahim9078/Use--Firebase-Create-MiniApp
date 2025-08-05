@@ -47,7 +47,7 @@ if (document.getElementById('signup-btn')) {
         try {
             await createUserWithEmailAndPassword(auth, email, password);
             alert("Account created successfully! Please login.");
-            window.location.href = "login.html";
+            window.location.href = "public/login.html";
         } catch (error) {
             alert(error.message);
         }
@@ -74,7 +74,7 @@ if (document.getElementById('logout-btn')) {
     document.getElementById('logout-btn').addEventListener('click', async () => {
         try {
             await signOut(auth);
-            window.location.href = "login.html";
+            window.location.href = "../public/login.html";
         } catch (error) {
             alert(error.message);
         }
@@ -174,7 +174,7 @@ onAuthStateChanged(auth, (user) => {
     } else {
         // User is logged out
         if (window.location.pathname.endsWith("dashboard.html")) {
-            window.location.href = "login.html";
+            window.location.href = "../public/login.html";
         }
     }
 });
