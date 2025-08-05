@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav>
+            <button id="logout-btn">Logout</button>
+            <button id="show-form-btn">Add Product</button>
+        </nav>
+
+        <div id="product-form" class="product-form" style="display: none;">
+    <h2>Add New Product</h2>
+    <input type="text" id="product-name" placeholder="Product Name">
+    <input type="text" id="product-description" placeholder="Description">
+    <input type="number" id="product-price" placeholder="Price">
+    <!-- یہاں تصویر کا URL ان پٹ شامل کریں -->
+    <input type="text" id="product-image-url" placeholder="Image URL (e.g., https://i.ibb.co/...)">
+    <button id="save-product-btn">Save Product</button>
+</div>
+
+        <h2>Your Products</h2>
+        <div id="products-grid" class="products-grid"></div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
